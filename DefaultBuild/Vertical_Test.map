@@ -1,0 +1,563 @@
+
+
+
+78K0R Linker W1.70                            Date:10 Jul 2017 Page:   1
+
+Command:   -yC:\Program Files (x86)\Renesas Electronics\CubeSuite+\Devic
+           e\RL78\Devicefile -_msgoff -oDefaultBuild\Vertical_Test.lmf -
+           go84h,3E00h,512 -gb0EFFFEDH -mi0 -s -pDefaultBuild\Vertical_T
+           est.map C:\Program Files (x86)\Renesas Electronics\CubeSuite+
+           \CA78K0R\V1.60\lib78k0r\s0rll.rel DefaultBuild\LCD.rel Defaul
+           tBuild\r_main.rel DefaultBuild\r_systeminit.rel DefaultBuild\
+           r_cg_cgc.rel DefaultBuild\r_cg_cgc_user.rel DefaultBuild\r_cg
+           _port.rel DefaultBuild\r_cg_port_user.rel DefaultBuild\r_cg_i
+           ntc.rel DefaultBuild\r_cg_intc_user.rel DefaultBuild\r_cg_ser
+           ial.rel DefaultBuild\r_cg_serial_user.rel DefaultBuild\r_cg_a
+           dc.rel DefaultBuild\r_cg_adc_user.rel DefaultBuild\r_cg_timer
+           .rel DefaultBuild\r_cg_timer_user.rel -bcl0ram.lib -bcl0rm.li
+           b -bcl0rmf.lib -iC:\Program Files (x86)\Renesas Electronics\C
+           ubeSuite+\CA78K0R\V1.60\lib78k0r
+Para-file:
+Out-file:  DefaultBuild\Vertical_Test.lmf
+Map-file:  DefaultBuild\Vertical_Test.map
+Direc-file:
+Directive:
+
+
+*** Link information ***
+
+    45 output segment(s)
+ 1185H byte(s) real data
+  1096 symbol(s) defined
+
+
+*** Memory map ***
+
+
+  SPACE=REGULAR
+
+  MEMORY=ROM
+  BASE ADDRESS=00000H   SIZE=04000H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@VECT00                     00000H    00002H  CSEG AT
+                  @@VECT00 @cstart    00000H    00002H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  @cstart    00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  LCD        00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_main     00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_systeminit
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_cgc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_port
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_port_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_intc
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_intc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_serial
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_serial_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_adc   00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_adc_user
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_timer
+                                      00002H    00000H
+         @@CNSTL                      00002H    00000H  CSEG PAGE64KP
+                  @@CNSTL  r_cg_timer_user
+                                      00002H    00000H
+         @@RLINIT                     00002H    00000H  CSEG UNIT64KP
+                  @@RLINIT @cstart    00002H    00000H
+                  @@RLINIT LCD        00002H    00000H
+                  @@RLINIT r_main     00002H    00000H
+                  @@RLINIT r_systeminit
+                                      00002H    00000H
+                  @@RLINIT r_cg_cgc   00002H    00000H
+                  @@RLINIT r_cg_cgc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_port
+                                      00002H    00000H
+                  @@RLINIT r_cg_port_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_intc
+                                      00002H    00000H
+                  @@RLINIT r_cg_intc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_serial
+                                      00002H    00000H
+                  @@RLINIT r_cg_serial_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_adc   00002H    00000H
+                  @@RLINIT r_cg_adc_user
+                                      00002H    00000H
+                  @@RLINIT r_cg_timer
+                                      00002H    00000H
+                  @@RLINIT r_cg_timer_user
+                                      00002H    00000H
+                  @@RLINIT @rom       00002H    00000H
+         @@R_INIS                     00002H    00000H  CSEG UNIT64KP
+                  @@R_INIS @cstart    00002H    00000H
+                  @@R_INIS LCD        00002H    00000H
+                  @@R_INIS r_main     00002H    00000H
+                  @@R_INIS r_systeminit
+                                      00002H    00000H
+                  @@R_INIS r_cg_cgc   00002H    00000H
+                  @@R_INIS r_cg_cgc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_port
+                                      00002H    00000H
+                  @@R_INIS r_cg_port_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_intc
+                                      00002H    00000H
+                  @@R_INIS r_cg_intc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_serial
+                                      00002H    00000H
+                  @@R_INIS r_cg_serial_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_adc   00002H    00000H
+                  @@R_INIS r_cg_adc_user
+                                      00002H    00000H
+                  @@R_INIS r_cg_timer
+                                      00002H    00000H
+                  @@R_INIS r_cg_timer_user
+                                      00002H    00000H
+                  @@R_INIS @rom       00002H    00000H
+         @@CALT                       00002H    00000H  CSEG
+                  @@CALT   @cstart    00002H    00000H
+                  @@CALT   LCD        00002H    00000H
+                  @@CALT   r_main     00002H    00000H
+                  @@CALT   r_systeminit
+                                      00002H    00000H
+                  @@CALT   r_cg_cgc   00002H    00000H
+                  @@CALT   r_cg_cgc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_port
+                                      00002H    00000H
+                  @@CALT   r_cg_port_user
+                                      00002H    00000H
+                  @@CALT   r_cg_intc
+                                      00002H    00000H
+                  @@CALT   r_cg_intc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_serial
+                                      00002H    00000H
+                  @@CALT   r_cg_serial_user
+                                      00002H    00000H
+                  @@CALT   r_cg_adc   00002H    00000H
+                  @@CALT   r_cg_adc_user
+                                      00002H    00000H
+                  @@CALT   r_cg_timer
+                                      00002H    00000H
+                  @@CALT   r_cg_timer_user
+                                      00002H    00000H
+         ??NMIROM                     00002H    00002H  CSEG
+         @@R_INIT                     00004H    00008H  CSEG UNIT64KP
+                  @@R_INIT @cstart    00004H    00000H
+                  @@R_INIT LCD        00004H    00004H
+                  @@R_INIT r_main     00008H    00004H
+                  @@R_INIT r_systeminit
+                                      0000CH    00000H
+                  @@R_INIT r_cg_cgc   0000CH    00000H
+                  @@R_INIT r_cg_cgc_user
+                                      0000CH    00000H
+                  @@R_INIT r_cg_port
+                                      0000CH    00000H
+                  @@R_INIT r_cg_port_user
+                                      0000CH    00000H
+                  @@R_INIT r_cg_intc
+                                      0000CH    00000H
+                  @@R_INIT r_cg_intc_user
+                                      0000CH    00000H
+                  @@R_INIT r_cg_serial
+                                      0000CH    00000H
+                  @@R_INIT r_cg_serial_user
+                                      0000CH    00000H
+                  @@R_INIT r_cg_adc   0000CH    00000H
+                  @@R_INIT r_cg_adc_user
+                                      0000CH    00000H
+                  @@R_INIT r_cg_timer
+                                      0000CH    00000H
+                  @@R_INIT r_cg_timer_user
+                                      0000CH    00000H
+                  @@R_INIT @rom       0000CH    00000H
+* gap *                               0000CH    00004H
+         @@VECT10                     00010H    00002H  CSEG AT
+                  @@VECT10 r_cg_intc_user
+                                      00010H    00002H
+* gap *                               00012H    00006H
+         @@VECT18                     00018H    00002H  CSEG AT
+                  @@VECT18 r_cg_serial_user
+                                      00018H    00002H
+* gap *                               0001AH    0000CH
+         @@VECT26                     00026H    00002H  CSEG AT
+                  @@VECT26 r_cg_serial_user
+                                      00026H    00002H
+* gap *                               00028H    00004H
+         @@VECT2C                     0002CH    00002H  CSEG AT
+                  @@VECT2C r_cg_timer_user
+                                      0002CH    00002H
+         @@VECT2E                     0002EH    00002H  CSEG AT
+                  @@VECT2E r_cg_adc_user
+                                      0002EH    00002H
+* gap *                               00030H    00090H
+         ?CSEGOB0                     000C0H    00004H  CSEG OPT_BYTE
+         @@CODE                       000C4H    00000H  CSEG BASE
+                  @@CODE   LCD        000C4H    00000H
+                  @@CODE   r_main     000C4H    00000H
+                  @@CODE   r_systeminit
+                                      000C4H    00000H
+                  @@CODE   r_cg_cgc   000C4H    00000H
+                  @@CODE   r_cg_cgc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_port
+                                      000C4H    00000H
+                  @@CODE   r_cg_port_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_intc
+                                      000C4H    00000H
+                  @@CODE   r_cg_intc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_serial
+                                      000C4H    00000H
+                  @@CODE   r_cg_serial_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_adc   000C4H    00000H
+                  @@CODE   r_cg_adc_user
+                                      000C4H    00000H
+                  @@CODE   r_cg_timer
+                                      000C4H    00000H
+                  @@CODE   r_cg_timer_user
+                                      000C4H    00000H
+* gap *                               000C4H    0000AH
+         ?OCDSTAD                     000CEH    0000AH  CSEG
+         @@LCODE                      000D8H    000ADH  CSEG BASE
+                  @@LCODE  @cstart    000D8H    000ADH
+         @@BASE                       00185H    00085H  CSEG BASE
+                  @@BASE   LCD        00185H    00000H
+                  @@BASE   r_main     00185H    00000H
+                  @@BASE   r_systeminit
+                                      00185H    00000H
+                  @@BASE   r_cg_cgc   00185H    00000H
+                  @@BASE   r_cg_cgc_user
+                                      00185H    00000H
+                  @@BASE   r_cg_port
+                                      00185H    00000H
+                  @@BASE   r_cg_port_user
+                                      00185H    00000H
+                  @@BASE   r_cg_intc
+                                      00185H    00000H
+                  @@BASE   r_cg_intc_user
+                                      00185H    00002H
+                  @@BASE   r_cg_serial
+                                      00187H    00000H
+                  @@BASE   r_cg_serial_user
+                                      00187H    0007CH
+                  @@BASE   r_cg_adc   00203H    00000H
+                  @@BASE   r_cg_adc_user
+                                      00203H    00002H
+                  @@BASE   r_cg_timer
+                                      00205H    00000H
+                  @@BASE   r_cg_timer_user
+                                      00205H    00005H
+         @@CODEL                      0020AH    0090EH  CSEG
+                  @@CODEL  LCD        0020AH    002A2H
+                  @@CODEL  r_main     004ACH    0008DH
+                  @@CODEL  r_systeminit
+                                      00539H    00033H
+                  @@CODEL  r_cg_cgc   0056CH    00017H
+                  @@CODEL  r_cg_cgc_user
+                                      00583H    00005H
+                  @@CODEL  r_cg_port
+                                      00588H    0001BH
+                  @@CODEL  r_cg_port_user
+                                      005A3H    00000H
+                  @@CODEL  r_cg_intc
+                                      005A3H    0004AH
+                  @@CODEL  r_cg_intc_user
+                                      005EDH    00000H
+                  @@CODEL  r_cg_serial
+                                      005EDH    00206H
+                  @@CODEL  r_cg_serial_user
+                                      007F3H    000CDH
+                  @@CODEL  r_cg_adc   008C0H    00052H
+                  @@CODEL  r_cg_adc_user
+                                      00912H    00000H
+                  @@CODEL  r_cg_timer
+                                      00912H    001F3H
+                  @@CODEL  r_cg_timer_user
+                                      00B05H    00013H
+         @@LCODEL                     00B18H    004D9H  CSEG
+                  @@LCODEL @stkinit   00B18H    00044H
+                  @@LCODEL exit       00B5CH    0001CH
+                  @@LCODEL printf_n   00B78H    00479H
+* gap *                               00FF1H    0100FH
+         @@CNST                       02000H    00048H  CSEG MIRRORP
+                  @@CNST   @cstart    02000H    00000H
+                  @@CNST   LCD        02000H    00010H
+                  @@CNST   r_main     02010H    00038H
+                  @@CNST   r_systeminit
+                                      02048H    00000H
+                  @@CNST   r_cg_cgc   02048H    00000H
+                  @@CNST   r_cg_cgc_user
+                                      02048H    00000H
+                  @@CNST   r_cg_port
+                                      02048H    00000H
+                  @@CNST   r_cg_port_user
+                                      02048H    00000H
+                  @@CNST   r_cg_intc
+                                      02048H    00000H
+                  @@CNST   r_cg_intc_user
+                                      02048H    00000H
+                  @@CNST   r_cg_serial
+                                      02048H    00000H
+                  @@CNST   r_cg_serial_user
+                                      02048H    00000H
+                  @@CNST   r_cg_adc   02048H    00000H
+                  @@CNST   r_cg_adc_user
+                                      02048H    00000H
+                  @@CNST   r_cg_timer
+                                      02048H    00000H
+                  @@CNST   r_cg_timer_user
+                                      02048H    00000H
+* gap *                               02048H    01DB8H
+         ??OCDROM                     03E00H    00200H  CSEG
+
+  MEMORY=RAM
+  BASE ADDRESS=FFB00H   SIZE=00500H
+         OUTPUT   INPUT    INPUT      BASE      SIZE
+         SEGMENT  SEGMENT  MODULE     ADDRESS
+         @@DATA                       FFB00H    000DEH  DSEG BASEP
+                  @@DATA   @cstart    FFB00H    000BAH
+                  @@DATA   LCD        FFBBAH    0000EH
+                  @@DATA   r_main     FFBC8H    00000H
+                  @@DATA   r_systeminit
+                                      FFBC8H    00000H
+                  @@DATA   r_cg_cgc   FFBC8H    00000H
+                  @@DATA   r_cg_cgc_user
+                                      FFBC8H    00000H
+                  @@DATA   r_cg_port
+                                      FFBC8H    00000H
+                  @@DATA   r_cg_port_user
+                                      FFBC8H    00000H
+                  @@DATA   r_cg_intc
+                                      FFBC8H    00000H
+                  @@DATA   r_cg_intc_user
+                                      FFBC8H    00000H
+                  @@DATA   r_cg_serial
+                                      FFBC8H    00016H
+                  @@DATA   r_cg_serial_user
+                                      FFBDEH    00000H
+                  @@DATA   r_cg_adc   FFBDEH    00000H
+                  @@DATA   r_cg_adc_user
+                                      FFBDEH    00000H
+                  @@DATA   r_cg_timer
+                                      FFBDEH    00000H
+                  @@DATA   r_cg_timer_user
+                                      FFBDEH    00000H
+                  @@DATA   @rom       FFBDEH    00000H
+         @@INIT                       FFBDEH    00008H  DSEG BASEP
+                  @@INIT   @cstart    FFBDEH    00000H
+                  @@INIT   LCD        FFBDEH    00004H
+                  @@INIT   r_main     FFBE2H    00004H
+                  @@INIT   r_systeminit
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_cgc   FFBE6H    00000H
+                  @@INIT   r_cg_cgc_user
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_port
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_port_user
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_intc
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_intc_user
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_serial
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_serial_user
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_adc   FFBE6H    00000H
+                  @@INIT   r_cg_adc_user
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_timer
+                                      FFBE6H    00000H
+                  @@INIT   r_cg_timer_user
+                                      FFBE6H    00000H
+                  @@INIT   @rom       FFBE6H    00000H
+         @@INIS                       FFBE6H    00000H  DSEG UNITP
+                  @@INIS   @cstart    FFBE6H    00000H
+                  @@INIS   LCD        FFBE6H    00000H
+                  @@INIS   r_main     FFBE6H    00000H
+                  @@INIS   r_systeminit
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_cgc   FFBE6H    00000H
+                  @@INIS   r_cg_cgc_user
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_port
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_port_user
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_intc
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_intc_user
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_serial
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_serial_user
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_adc   FFBE6H    00000H
+                  @@INIS   r_cg_adc_user
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_timer
+                                      FFBE6H    00000H
+                  @@INIS   r_cg_timer_user
+                                      FFBE6H    00000H
+                  @@INIS   @rom       FFBE6H    00000H
+         @@DATS                       FFBE6H    00000H  DSEG UNITP
+                  @@DATS   @cstart    FFBE6H    00000H
+                  @@DATS   LCD        FFBE6H    00000H
+                  @@DATS   r_main     FFBE6H    00000H
+                  @@DATS   r_systeminit
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_cgc   FFBE6H    00000H
+                  @@DATS   r_cg_cgc_user
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_port
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_port_user
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_intc
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_intc_user
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_serial
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_serial_user
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_adc   FFBE6H    00000H
+                  @@DATS   r_cg_adc_user
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_timer
+                                      FFBE6H    00000H
+                  @@DATS   r_cg_timer_user
+                                      FFBE6H    00000H
+                  @@DATS   @rom       FFBE6H    00000H
+         @@INITL                      FFBE6H    00000H  DSEG UNIT64KP
+                  @@INITL  @cstart    FFBE6H    00000H
+                  @@INITL  LCD        FFBE6H    00000H
+                  @@INITL  r_main     FFBE6H    00000H
+                  @@INITL  r_systeminit
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_cgc   FFBE6H    00000H
+                  @@INITL  r_cg_cgc_user
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_port
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_port_user
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_intc
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_intc_user
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_serial
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_serial_user
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_adc   FFBE6H    00000H
+                  @@INITL  r_cg_adc_user
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_timer
+                                      FFBE6H    00000H
+                  @@INITL  r_cg_timer_user
+                                      FFBE6H    00000H
+                  @@INITL  @rom       FFBE6H    00000H
+         @@DATAL                      FFBE6H    00000H  DSEG UNIT64KP
+                  @@DATAL  @cstart    FFBE6H    00000H
+                  @@DATAL  LCD        FFBE6H    00000H
+                  @@DATAL  r_main     FFBE6H    00000H
+                  @@DATAL  r_systeminit
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_cgc   FFBE6H    00000H
+                  @@DATAL  r_cg_cgc_user
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_port
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_port_user
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_intc
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_intc_user
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_serial
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_serial_user
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_adc   FFBE6H    00000H
+                  @@DATAL  r_cg_adc_user
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_timer
+                                      FFBE6H    00000H
+                  @@DATAL  r_cg_timer_user
+                                      FFBE6H    00000H
+                  @@DATAL  @rom       FFBE6H    00000H
+         @@BITS                       FFBE6H    00000H  BSEG
+                  @@BITS   @cstart    FFBE6H.0  00000H.0
+                  @@BITS   LCD        FFBE6H.0  00000H.0
+                  @@BITS   r_main     FFBE6H.0  00000H.0
+                  @@BITS   r_systeminit
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_cgc   FFBE6H.0  00000H.0
+                  @@BITS   r_cg_cgc_user
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_port
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_port_user
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_intc
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_intc_user
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_serial
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_serial_user
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_adc   FFBE6H.0  00000H.0
+                  @@BITS   r_cg_adc_user
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_timer
+                                      FFBE6H.0  00000H.0
+                  @@BITS   r_cg_timer_user
+                                      FFBE6H.0  00000H.0
+* gap *                               FFBE6H    002EEH
+         @@SEGREG                     FFED4H    00004H  DSEG AT
+                  @@SEGREG @SEGREG    FFED4H    00004H
+         @@RTARG0                     FFED8H    00008H  DSEG AT
+                  @@RTARG0 @RTARG0    FFED8H    00008H
+* gap *                               FFEE0H    00020H
+* gap (Not Free Area) *               FFF00H    00100H
+
+
+ Target chip : R5F10RGA
+ Device file : V1.02
+
